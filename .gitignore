@@ -20,3 +20,6 @@ yarn-error.log
 /.idea/*
 .idea/
 ###< phpStorm ###
+
+/_temp/*
+_temp/
