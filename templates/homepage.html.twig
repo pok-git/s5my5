@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h4>Skills</h4>
+{% for skill in skills  %}
+
+<p>{{ skill.name }}</p>
+
+{% endfor %}
+{% endblock %}
