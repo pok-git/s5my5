@@ -5,12 +5,13 @@ Testing a _Symfony 5.4_ _mySql 5.7_ setup
 
 config/packages/doctrine.yaml
 
-        charset: utf8mb4
-        default_table_options:
-            charset:              utf8mb4
-            collate:              utf8mb4_unicode_ci
-            engine:               InnoDB
-
+    doctrine:
+        dbal:
+            charset: utf8mb4
+            default_table_options:
+                charset:    utf8mb4
+                collate:    utf8mb4_unicode_ci
+                engine:     InnoDB
 
 Requirements
 ------------
