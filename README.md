@@ -13,6 +13,12 @@ config/packages/doctrine.yaml
                 collate:    utf8mb4_unicode_ci
                 engine:     InnoDB
 
+
+my.cnf
+
+    collation-server     = utf8mb4_unicode_ci # Replaces utf8_unicode_ci
+    character-set-server = utf8mb4            # Replaces utf8
+
 Requirements
 ------------
 * PHP 7.4 or higher;
