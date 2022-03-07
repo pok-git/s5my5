@@ -1,10 +1,13 @@
-{% extends 'base.html.twig' %}
+{% extends 'baseBootstrap.html.twig' %}
 
 {% block body %}
-<h4>Skills</h4>
-{% for skill in skills  %}
+    <div class="container">
+        <h4>Skills</h4>
 
-<p>{{ skill.name }}</p>
-
-{% endfor %}
+        <ul class="list-group">
+        {% for skill in skills  %}
+            <li class="list-group-item">{{skill.name }}</li>
+        {% endfor %}
+        </ul>
+    </div>
 {% endblock %}
