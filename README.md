@@ -17,20 +17,25 @@ Resources
 * [Symfony Best Practices][5].
 * [SymfonyCasts][4].
 
-Setup
+Useful
 --------
+`composer install`  
 
-- `composer install`
+### database
+`php bin/console doctrine:database:drop --force`  
+`php bin/console doctrine:database:create`  
 
+### migrations
+`php bin/console doctrine:migrations:status`  
+`php bin/console doctrine:migrations:list`  
 
-- `php bin/console doctrine:database:create`
+`php bin/console doctrine:migrations:version --delete --all`  
 
+`php bin/console make:migration`  
+`php bin/console doctrine:migrations:migrate`  
 
-- `php bin/console make:migration`
-- `php bin/console doctrine:migrations:migrate`
-
-
-- `php bin/console doctrine:fixtures:load`
+### fixtures
+`php bin/console doctrine:fixtures:load`  
 
 
 
