@@ -13,7 +13,7 @@ doctrine:
         password: root
         driver: pdo_mysql
         server_version: '5.7'
-        #charset: utf8mb4
+        charset: utf8mb4
 
         default_table_options:
             # Affects schema-tool. If absent, DBAL chooses defaults
